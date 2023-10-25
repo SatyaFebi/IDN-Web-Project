@@ -81,6 +81,11 @@ nav img {
     top: 3px;
     z-index: 10;
     position: relative;
+    transition: scale 0.1s ease-in-out;
+}
+
+.tab-link i:hover {
+    scale: 1.2;
 }
 
 .tab-link .dark-light-mode {
@@ -174,31 +179,58 @@ nav img {
     min-height: 100vh;
 }
 
-#service h1 {
+#service .service-title {
     text-align: center;
     font-size: 44px;
     position: relative;
-    top: 135px;
+    top: 125px;
 }
 
-#service .serv {
+/* Card */
+#summary h2, h3, h4 {
+    margin: 0;
+    font-weight: 500;
+}
+
+#summary article {
     position: relative;
-    top: 190px;
-    text-align: center;
-    margin-bottom: 20px;
+    perspective: 1000px;
+    width: 300px;
+    height: 300px;
+}
+
+#summary article header {
     display: flex;
-    margin-left: 38%;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 26px;
+}
+
+#summary article .front {
+    position: relative;
+    text-align: center;
+    /* backface-visibility: hidden; */
+    background: #ffff;
+    border-radius: 10px rgba(0, 0, 0, 0.1) 0px 1px 3px 0px rgba(0, 0, 0, 0.1) 0px 1px 2px -1px;
+    padding: 24px;
+    /* transition: 0.6s; */
+    cursor: pointer;
+    top: 50%;
     
 }
 
-#service .serv i {
-    font-size: 48px;
+#summary .front img {
+    width: 245px;
+    height: 150px;
+    transition: transform 400ms;
+    object-fit: cover;
+    inset: 0;
 }
 
-#service .serv p {
-    text-align: center;
-    position: relative;
-    margin-left: 40px;
-    align-items: center;
-    justify-content: center;
+#summary .front img:hover {
+    transform: scale(1.05);
 }
+
+/* Card end */
+
