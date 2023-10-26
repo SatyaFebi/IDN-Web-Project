@@ -25,6 +25,7 @@ body::before {
     left: 20%;
     top: 20%;
     filter: blur(145px);
+    z-index: -1;
 }
 
 body::after {
@@ -36,6 +37,7 @@ body::after {
     left: 60%;
     top: 74%;
     filter: blur(145px);
+    z-index: -1;
 }
 
 nav {
@@ -66,13 +68,19 @@ nav img {
     align-items: center;
 }
 
-.tab-link .menu,
-.tab-link p {
-    text-decoration: none;
-    color: var(--primary);    
+.tab-link .menu {
+    text-decoration: none;    
     position: relative;
     margin-left: 27px;
     color: white;
+}
+
+.tab-link p {
+    text-decoration: none;   
+    position: relative;
+    margin-left: 29px;
+    color: white;
+    top: 9px;
 }
 
 .tab-link i {
@@ -117,13 +125,14 @@ nav img {
     opacity: 30%;
 }
 
-#home .home-text {
-    z-index: 10;
+#home .home-text h5 {
+    z-index: 40;
     position: absolute;
     top: 45%;
     font-size: 90px;
-    margin-left: 40%;
+    margin-left: 37%;
     color: white;
+    font-weight: bold;
 }
 
 #about {
@@ -158,6 +167,7 @@ nav img {
     text-align: center;
     top: 100px;
     position: relative;
+    font-weight: bold;
 }
 
 #about .about-text .nevtik-nevtik {
@@ -184,53 +194,97 @@ nav img {
     font-size: 44px;
     position: relative;
     top: 125px;
+    font-weight: bold;
 }
 
-/* Card */
-#summary h2, h3, h4 {
-    margin: 0;
-    font-weight: 500;
-}
-
-#summary article {
+#service .card-queue {
+    display: flex;
     position: relative;
-    perspective: 1000px;
+    margin: 0 10px;
+    justify-content: space-between;
+}
+
+#service .service-card {
     width: 300px;
     height: 300px;
-}
-
-#summary article header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 40px;
-    margin-bottom: 26px;
-}
-
-#summary article .front {
+    overflow: hidden;
     position: relative;
+    align-items: center;
+    background-color: white;
     text-align: center;
-    /* backface-visibility: hidden; */
-    background: #ffff;
-    border-radius: 10px rgba(0, 0, 0, 0.1) 0px 1px 3px 0px rgba(0, 0, 0, 0.1) 0px 1px 2px -1px;
-    padding: 24px;
-    /* transition: 0.6s; */
+    border-radius: 10px;
+    top: 200px;
     cursor: pointer;
-    top: 50%;
+    box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+#service .card-title {
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 18px;
+    font-size: 18px;
+}
+
+#service .service-card img {
+    width: 245px;
+    height: 140px;
+    transition: transform 0.6s;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#service .service-card button {
+    position: relative;
+    margin-top: 20px;
+}
+
+#service .service-card img:hover {
+    transform: scale(1.12);
+}
+/* Card end */
+
+#contact {
+    min-height: 100vh;
+}
+
+#contact h1 {
+    margin-left: 70px;
+    position: relative;
+    font-weight: bold;
+    top: 130px;
+    font-size: 44px;
+}
+
+#contact p {
+    position: relative;
+    margin-left: 70px;
+    margin-top: 17px;
+    top: 130px;
+}
+
+#contact .contact-container {
+    display: flex;
+    position: relative;
+    top: 160px;
+}
+
+#contact form {
+    position: relative;
+    left: 70px;
     
 }
 
-#summary .front img {
-    width: 245px;
-    height: 150px;
-    transition: transform 400ms;
-    object-fit: cover;
-    inset: 0;
+#contact form h4 {
+    position: relative;
+    margin-bottom: 25px;
 }
 
-#summary .front img:hover {
-    transform: scale(1.05);
+#contact .contact-container h2 {
+    display: flex;
 }
 
-/* Card end */
-
+#contact .contact-container .school-address {
+    display: flex;
+    position: relative;
+    top: 30px;
+}

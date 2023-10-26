@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
     <nav>
@@ -46,65 +47,152 @@
     <!-- Service section -->
     <section id="service">
         <h1 class="service-title">Our Services</h1>
+        <div class="card-queue">
 
-        <!-- Card start -->
-        <label for="" id="summary">
-            <article>
-                <div class="front">
-                    <header>
-                        <h2>Summary</h2>
-                    </header>
-                    <img src="https://tpcom.ca/wp-content/uploads/2021/06/networking-cabling-installer.jpg" alt="">
-                    <h4>Network Installation</h4>
+            <!-- Card start -->
+            <div class="service-card">
+                <h2 class="card-title">Network Installation</h2>
+                <img src="https://tpcom.ca/wp-content/uploads/2021/06/networking-cabling-installer.jpg" alt="">
+                <!-- Modal -->
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    More -->
+                </button>
+                <div class="modal fade"  id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog-centered modal-dialog">
+                        <div class="modal-content" >
+                            <div class="modal-header" >
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </article>
-        </label>
-        <label for="" id="summary">
-            <article>
-                <div class="front">
-                    <header>
-                        <h2>Summary</h2>
-                    </header>
-                    <img src="https://tpcom.ca/wp-content/uploads/2021/06/networking-cabling-installer.jpg" alt="">
-                    <h4>Network Installation</h4>
-                </div>
-            </article>
-        </label>
-        
-        <label for="" id="summary">
-            <article>
-                <div class="front">
-                    <header>
-                        <h2>Summary</h2>
-                    </header>
-                    <img src="https://tpcom.ca/wp-content/uploads/2021/06/networking-cabling-installer.jpg" alt="">
-                    <h4>Network Installation</h4>
-                </div>
-            </article>
-        </label>
+            </div>
 
-        <label for="" id="summary">
-            <article>
-                <div class="front">
-                    <header>
-                        <h2>Summary</h2>
-                    </header>
-                    <img src="https://tpcom.ca/wp-content/uploads/2021/06/networking-cabling-installer.jpg" alt="">
-                    <h4>Network Installation</h4>
+            <!-- Card start -->
+            <div class="service-card">
+                <h2 class="card-title">Web Development</h2>
+                <img src="img/web dev.png" alt="">
+                <!-- Modal -->
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    More -->
+                </button>
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </article>
-        </label>
+            </div>
+
+            <!-- Card start -->
+            <div class="service-card">
+                <h2 class="card-title">Configure Internet Service</h2>
+                <img src="img/networking.jpg" alt="">
+                <!-- Modal -->
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    More -->
+                </button>
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card start -->
+            <div class="service-card">
+                <h2 class="card-title">Service and Repair</h2>
+                <img src="img/servnrep.jpg" alt="">
+                <!-- Modal -->
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    More -->
+                </button>
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Card end -->
     </section>
 
-    <!-- Location section -->
-    <section id="loc">
-
+    <!-- Contact section -->
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <p>Contact us if you have question</p>
+        <div class="contact-container">
+            <form action="">
+                <h4>Tell us your problem</h4>
+                <div class="form-group">
+                    <label for="">Name</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label for="">Subject</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label for="">Email/Telp Number</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label for="">Message</label>
+                    <input type="text">
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <h2>Visit<span>&nbsp;Our&nbsp;</span>School</h2>
+            <div class="school-address">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1666.6551367155564!2d106.80748108749872!3d-6.522149358366353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c3db9bbedcc3%3A0x1f5280e86053b1e9!2sSMK%20NEGERI%201%20Cibinong!5e0!3m2!1sid!2sid!4v1698301617263!5m2!1sid!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
     </section>
 
 
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/bd85ac852f.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
 </body>
 </html>
