@@ -12,7 +12,7 @@
 }
 
 body {
-    min-height: 3000px;
+    min-height: 3800px;
     background-color: rgb(229, 230, 238);
 }
 
@@ -56,7 +56,7 @@ nav {
 
 nav img {
     position: relative;
-    width: 70px;
+    width: 100%;
     height: 70px;
     top: -8px;
     left: -65px;
@@ -117,12 +117,13 @@ nav img {
 #home .home-img {
     display: flex;
     background-image: url("img/nevtik-home-2.jpeg");
-    width: 1343px;
+    width: 100%;
     min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 30%;
+    opacity: 18%;
+    background-attachment: fixed;
 }
 
 #home .home-text h5 {
@@ -130,7 +131,7 @@ nav img {
     position: absolute;
     top: 45%;
     font-size: 90px;
-    margin-left: 37%;
+    margin-left: 38%;
     color: white;
     font-weight: bold;
 }
@@ -244,7 +245,7 @@ nav img {
 /* Card end */
 
 #contact {
-    min-height: 100vh;
+    min-height: 115vh;
 }
 
 #contact h1 {
@@ -260,31 +261,75 @@ nav img {
     margin-left: 70px;
     margin-top: 17px;
     top: 130px;
+    font-size: 24px;
 }
 
 #contact .contact-container {
     display: flex;
     position: relative;
     top: 160px;
+    margin-left: 40px;
 }
 
 #contact form {
     position: relative;
-    left: 70px;
-    
+    left: 120px;
+    top: 40px;
 }
 
-#contact form h4 {
+#contact form .contact-tell {
+    position: relative;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#contact .form-group {
     position: relative;
     margin-bottom: 25px;
 }
 
-#contact .contact-container h2 {
+#contact .form-group label {
+    display: block;
+}
+
+#contact .form-group input {
+    width: 430px;
+    border: none;
+    height: 35px;
+    background: none;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(10, 10, 63);
+}
+
+#contact .form-group input:focus {
+    /* border-bottom: 3px solid rgb(10, 10, 63); */
+    border: none;
+    outline: none;
+    text-decoration: underline;
+}
+
+#contact form button {
+    background-color: rgb(10, 10, 63);
+    color: white;
+    border-radius: 5px;
+    padding: 8px 15px;
+}
+
+#contact .contact-container .contact-visit {
     display: flex;
+    position: relative;
+    left: 33%;
+    top: 33px;
 }
 
 #contact .contact-container .school-address {
     display: flex;
     position: relative;
-    top: 30px;
+    top: 120px;
+    left: 65px;
+}
+
+#bf-footer {
+    min-height: 50vh;
+    background-color: rgb(25, 24, 24);
 }
