@@ -12,7 +12,7 @@
 }
 
 body {
-    min-height: 3800px;
+    min-height: 3230px;
     background-color: rgb(229, 230, 238);
 }
 
@@ -273,7 +273,7 @@ nav img {
 
 #contact form {
     position: relative;
-    left: 120px;
+    left: 70px;
     top: 40px;
 }
 
@@ -318,7 +318,7 @@ nav img {
 #contact .contact-container .contact-visit {
     display: flex;
     position: relative;
-    left: 33%;
+    left: 29%;
     top: 33px;
 }
 
@@ -326,10 +326,122 @@ nav img {
     display: flex;
     position: relative;
     top: 120px;
-    left: 65px;
+    left: 15px;
 }
 
 #bf-footer {
-    min-height: 50vh;
+    height: 63vh;
     background-color: rgb(25, 24, 24);
+    position: relative;
+    margin-top: 160px;
+    display: flex;
+}
+
+#bf-footer .ft-text {
+    position: relative;
+    top: 55px;
+    color: rgb(226 232 240);
+    left: 60px;
+}
+
+#bf-footer .ft-text h3 {
+    font-size: 26px;
+    position: relative;
+    margin-bottom: 13px;
+
+}
+
+#bf-footer .ft-text .ft-btn {
+    padding: 5px 16px;
+    border-radius: 5px;
+}
+
+#bf-footer .ft-link {
+    display: flex;
+}
+
+#bf-footer .ft-link .ft-about {
+    position: relative;
+    margin-top: 62px;
+    margin-left: 200px;
+}
+
+#bf-footer .ft-link .ft-about h4 {
+    color: rgb(226 232 240);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#bf-footer .ft-link .ft-about a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 14px;
+}
+
+#bf-footer .ft-link .ft-about a:hover {
+    color: rgb(70, 68, 240);
+    transition: ease-in-out 0.3s;
+}
+
+#bf-footer .ft-link .ft-qlink {
+    position: relative;
+    margin-left: 200px;
+    margin-top: 62px;
+}
+
+#bf-footer .ft-link .ft-qlink h4 {
+    color: rgb(226 232 240);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#bf-footer .ft-link .ft-qlink a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 14px;
+}
+
+#bf-footer .ft-link .ft-qlink a:hover {
+    color: rgb(70, 68, 240);
+    transition: ease-in-out 0.3s;
+}
+
+#bf-footer .ft-link .ft-info h4 {
+    position: relative;
+    margin-left: 160px;
+    color: rgb(226 232 240);
+    margin-top: 62px;
+    font-weight: 600;
+}
+
+#bf-footer .ft-link .ft-info {
+    display: flex;
+    margin-left: 110px;
+    margin-top: 3px;
+    position: relative;
+}
+
+
+#bf-footer .ft-link .ft-info .loc-img {
+    position: relative;
+    font-size: 22px;
+    margin-left: 100px;
+    margin-top: 3px;
+}
+
+#bf-footer .ft-link .ft-info p {
+    display: block;
+    color: white;
+    position: relative;
+    margin-left: 10px;
+    width: 190px;
+}
+
+#bf-footer .ft-link .ft-flex {
+    display: flex;
+    right: 280px;
+    margin-top: 130px;
+    position: relative;
 }
